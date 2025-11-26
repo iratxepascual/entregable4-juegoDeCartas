@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../dist/index.js" type="module" async></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Entregable 4 - Juego de cartas</title>
+</head>
+<body>
+
+  <div id="game-container">
+
+    <div id="battle-area">
+      <h1 class="title">Campo de batalla</h1>
+
+      <div class="cards-row">
+        <div class="player-area">
+          <h2>Jugador</h2>
+          <img id="player-card" class="card" src="assets/cards/back.svg" alt="Carta del jugador">
+        </div>
+
+        <div class="machine-area">
+          <h2>Máquina</h2>
+          <img id="machine-card" class="card" src="assets/cards/back.svg" alt="Carta de la máquina">
+        </div>
+      </div>
+
+      <button id="draw-button">Robar carta</button>
+    </div>
+
+    <div id="score-area">
+      <h2>Marcador</h2>
+      <p>Jugador: <span id="score-player">0</span></p>
+      <p>Máquina: <span id="score-machine">0</span></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
