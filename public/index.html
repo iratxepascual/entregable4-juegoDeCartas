@@ -18,21 +18,45 @@
         <div class="player-area">
           <h2>Jugador</h2>
           <img id="player-card" class="card" src="assets/cards/back.svg" alt="Carta del jugador">
+          <img id="player-extra-card" class="extra-card hidden" />
         </div>
 
         <div class="machine-area">
           <h2>Máquina</h2>
           <img id="machine-card" class="card" src="assets/cards/back.svg" alt="Carta de la máquina">
+          <img id="machine-extra-card" class="extra-card hidden" />
         </div>
       </div>
 
       <button id="draw-button">Robar carta</button>
     </div>
 
-    <div id="score-area">
-      <h2>Marcador</h2>
-      <p>Jugador: <span id="score-player">0</span></p>
-      <p>Máquina: <span id="score-machine">0</span></p>
+    <div id="right-column">
+      <div id="score-area">
+        <h2>Marcador</h2>
+        <p>Jugador: <span id="score-player">0</span></p>
+        <p>Máquina: <span id="score-machine">0</span></p>
+      </div>
+
+      <div id="rules-area">
+        <h3>Reglas:</h3>
+        <ul class="rules-list">
+          <li class="rule-item"><strong>Orden de elementos:</strong>
+            <ul class="elements">
+              <li><span class="chip water"></span> Agua vence a Fuego</li>
+              <li><span class="chip fire"></span> Fuego vence a Aire</li>
+              <li><span class="chip air"></span> Aire vence a Tierra</li>
+              <li><span class="chip earth"></span> Tierra vence a Agua</li>
+            </ul>
+          </li>
+          <li class="rule-item"><strong>Cartas especiales:</strong>
+            <ul>
+              <li><strong>Tormenta (storm):</strong> intercambias puntos con la máquina.</li>
+              <li><strong>Terremoto (earthquake):</strong> roba una carta extra (pulsa "Robar carta" para obtenerla).</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </div>
