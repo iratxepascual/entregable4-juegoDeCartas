@@ -41,7 +41,7 @@ body {
 #right-column > * { width: 100%; }
 
 #battle-area {
-  width: 70%;
+  width: 75%;
   background-image: linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url('../assets/background/background.jpg');
   padding: 20px;
   border-radius: 10px;
